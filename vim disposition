@@ -1,0 +1,26 @@
+ "====== Basic Configuration ======                                                                                                                           
+set number             		 " 显示行号
+set cursorline             	 " 突出显示当前行
+hi Cursorline cterm=bold ctermbg=black ctermfg=green guibg=green "粗体显示选中行，用黑色框，字体标绿
+set cursorcolumn             " 设置列高亮 
+hi Cursorcolumn cterm=bold ctermbg=black ctermfg=green guibg=green "粗体显示选中列，用黑色框，字体标绿
+set autoindent 		         " 自动缩进
+set cindent
+set tabstop=4 				 " Tab键的宽度
+set softtabstop=4 		     " 统一缩进为4
+set shiftwidth=4
+set noexpandtab 			 " 不要用空格代替制表符 或者使用expandtab将tab保存为space
+set smarttab 			     " 在行和段开始处使用制表符
+set ignorecase 			     "搜索忽略大小写
+set hlsearch 			     "搜索逐字符高亮
+set incsearch 				 "增强搜索
+set smartindent 			 " 提供自动缩进
+syntax on					 " 语法高亮
+
+
+" 突出显示81列
+set textwidth=80
+set colorcolumn=+1
+
+nnoremap <c-n> :tabnext<cr>    "切换下一个使用:tabe打开的tag页 映射为 ctrl+n
+nnoremap <c-p> :tabprev<cr>    "切换上一个使用:tabe打开的tag页 映射为 ctrl+p
